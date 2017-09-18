@@ -14,3 +14,25 @@
     z-index: 99;
     opacity: .4;
 }
+
+
+.slide ul,
+.slide ul > li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide ul > li::before {
+    content: '';
+}
+
+.slide ul > li > ul {
+    padding-left: 2em;
+}
+
+.slide ul > li > ul > li::before {
+     content: '‣';
+    content:url('ruby.png');
+    width: 16px;
+    height: 16px;
+ }
