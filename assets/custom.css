@@ -7,4 +7,10 @@
     font-family: monospace;
     font-size: .75em;
     line-height: 1.6em;
+    z-index: -1;
+}
+
+.slide::before {
+    z-index: 99;
+    opacity: .4;
 }
