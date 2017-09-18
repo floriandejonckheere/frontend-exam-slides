@@ -3,11 +3,8 @@
  *
  */
 
-.slide pre {
-    display: block;
+.slide pre code {
     font-family: monospace;
-    white-space: pre;
-
-    font-size: .8em;
+    font-size: .75em;
     line-height: 1.6em;
 }
