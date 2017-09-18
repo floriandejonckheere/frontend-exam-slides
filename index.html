@@ -51,6 +51,7 @@
       <li>Reflection is builtin</li>
       <li>Operators are methods</li>
       <li>Dynamic dispatch</li>
+      <li>Metaprogramming</li>
     </ul>
   </section>
 
@@ -146,10 +147,10 @@ puts "Hello, world!"
     <pre>
       <code class="ruby">
 3.times do
-  puts "ha"
+  puts "ha".upcase
 end
 
-=> "hahaha"
+=> "HAHAHA"
       </code>
     </pre>
   </section>
@@ -206,6 +207,20 @@ end
           <li>JSON, XML, HTML response rendering</li>
           <li>Database infrastructure</li>
           <li>Email infrastructure</li>
+          <li>API-only mode</li>
+          <li>Behaviour Driven Development via RSpec</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide" id="rails-what-3">
+    <h2>Ruby on Rails</h2>
+
+    <ul>
+      <li>Scaffolding/boilerplate code
+        <ul>
+          <li>Make it work first, then expand it</li>
         </ul>
       </li>
     </ul>
@@ -220,6 +235,7 @@ end
       <li>Airbnb</li>
       <li>SoundCloud</li>
       <li>GitHub</li>
+      <li>Heroku</li>
     </ul>
   </section>
 
@@ -227,7 +243,8 @@ end
     <h2>Models</h2>
 
     <ul>
-      <li>Wrapper around database objects and domain logic</li>
+      <li><em>Database wrapping</em> instead of <em>Database mapping</em></li>
+      <li>Encapsulates database and domain logic</li>
       <li>Based on <a href="https://martinfowler.com">Martin Fowler</a>'s ActiveRecord pattern</li>
       <li>Still easy to drop to SQL</li>
     </ul>
@@ -265,7 +282,7 @@ end
     <h2>Migrations</h2>
 
     <ul>
-      <li>Database-independant schema definitions</li>
+      <li>Database-independent schema definitions</li>
       <li>Incrementally build your database</li>
     </ul>
 
@@ -283,6 +300,67 @@ class CreateUsers < ActiveRecord::Migration[5.0]
 end
       </code>
     </pre>
+  </section>
+
+  <section class="slide" id="rails-views">
+    <h2>Views</h2>
+
+    <ul>
+      <li>Plain HTML</li>
+      <li>XML</li>
+      <li>JSON</li>
+      <li>Embedded Ruby (ERB)</li>
+      <li>HTML Abstraction Markup Language (HAML)</li>
+      <li>Rails 5: integration with Webpack, React, Vue</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="rails-controller">
+    <h2>Controllers</h2>
+
+    <ul>
+      <li>Handle requests and responses</li>
+      <li>Tie models and views together</li>
+      <li>Method for every route/action:</li>
+      <li><pre><code class="ruby">index, create, show, update, destroy</code></pre></li>
+    </ul>
+  </section>
+
+  <section class="slide" id="rails-disadvantages">
+    <h2>Disadvantages</h2>
+
+    <ul>
+      <li>Way slower than Java</li>
+      <li>No real concurrency due to Global Interpreter Lock (except JRuby)</li>
+      <li>Small-ish market share</li>
+      <li>Easy to program != good programming (see PHP)</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="future">
+    <h2>Future</h2>
+
+    <ul>
+      <li>Ruby 3x3</li>
+      <li>JavaScript does not completely suck anymore</li>
+      <li>Shift to SPA</li>
+      <li>Prototyping</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="conclusion">
+    <h2>Conclusion</h2>
+
+    <ul>
+      <li>Ruby is <span class="rainbow">awesome</span></li>
+      <li>Used more and more to teach OOP</li>
+      <li>Rails is stable and mature</li>
+      <li>Essential tool for a polygot programmer</li>
+    </ul>
+  </section>
+
+  <section class="slide black" id="qa">
+    <h2>Questions</h2>
   </section>
 
   <div class="progress"></div>
