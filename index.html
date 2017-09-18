@@ -184,6 +184,110 @@ end
     </ul>
   </section>
 
+  <section class="slide" id="rails-what">
+    <h2>Ruby on Rails</h2>
+
+    <ul>
+      <li>Server-side web app framework</li>
+      <li>Written in Ruby</li>
+      <li>Optimized for programmer happiness and productivity</li>
+      <li>MVC-pattern</li>
+      <li>Convention over Configuration</li>
+      <li>Don't Repeat Yourself (DRY)</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="rails-what-2">
+    <h2>Ruby on Rails</h2>
+
+    <ul>
+      <li>Based on REST principles</li>
+      <li>
+        Batteries included
+        <ul>
+          <li>JSON, XML, HTML response rendering</li>
+          <li>Database infrastructure</li>
+          <li>Email infrastructure</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide" id="rails-who">
+    <h2>Who</h2>
+
+    <ul>
+      <li>Basecamp</li>
+      <li>Twitter</li>
+      <li>Airbnb</li>
+      <li>SoundCloud</li>
+      <li>GitHub</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="rails-activerecord">
+    <h2>Models</h2>
+
+    <ul>
+      <li>Wrapper around database objects and domain logic</li>
+      <li>Based on <a href="https://martinfowler.com">Martin Fowler</a>'s ActiveRecord pattern</li>
+      <li>Still easy to drop to SQL</li>
+    </ul>
+
+    <pre>
+      <code class="ruby">
+class Blog < ActiveRecord::Base
+  has_one :author, :class_name => 'User'
+  has_many :posts
+  has_many :categories
+end
+      </code>
+    </pre>
+  </section>
+
+  <section class="slide" id="rails-activerecord-2">
+    <h2>Models</h2>
+
+    <pre>
+      <code class="ruby">
+user = User.find_by :first_name => 'Florian'
+
+user.update :email => 'florian@dejonckhee.re'
+
+if user.last_name?
+  puts "#{user.first_name} #{user.last_name} updated!"
+else
+  puts "#{user.first_name} updated!"
+end
+      </code>
+    </pre>
+  </section>
+
+  <section class="slide" id="rails-migrations">
+    <h2>Migrations</h2>
+
+    <ul>
+      <li>Database-independant schema definitions</li>
+      <li>Incrementally build your database</li>
+    </ul>
+
+    <pre>
+      <code class="ruby">
+class CreateUsers < ActiveRecord::Migration[5.0]
+  def change
+    create_table :users do |t|
+      t.string :name
+      t.string :email, :null => false
+
+      t.timestamps
+    end
+  end
+end
+      </code>
+    </pre>
+  </section>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/shower-core/2.1.0/shower.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
