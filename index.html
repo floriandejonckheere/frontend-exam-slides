@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" href="theme/screen-16x10.css">
+  <link rel="stylesheet" href="assets/custom.css">
 </head>
 <body class="shower list">
   <header class="caption">
@@ -28,7 +29,151 @@
     </p>
   </section>
 
+  <section class="slide" id="ruby">
+    <h2>Ruby</h2>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/shower-core/2.1.0/shower.min.js"></script>
+    <ul>
+      <li>Designed by Yukihiro Matsumoto (Matz) in 1995</li>
+      <li>Dynamic (interpreted) language, like JavaScript or Python</li>
+      <li>Dynamic typing</li>
+      <li>Loosely based on Perl</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="ruby-2">
+    <h2>Ruby</h2>
+
+    <ul>
+      <li>Truly object oriented</li>
+      <li>No primitives</li>
+      <li>Reflection is builtin</li>
+      <li>Operators are methods</li>
+      <li>Dynamic dispatch</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="ruby-differences">
+    <h2>Ruby</h2>
+
+    <ul>
+      <li>JavaScript: competition between two companies</li>
+      <li>PHP: community effort</li>
+      <li>Ruby: vision of a single person</li>
+      <li>Rails: vision of another single person</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="ruby-why">
+    <h2>Why Ruby</h2>
+
+    <ul>
+      <li>Write more understandable code in less lines</li>
+      <li>Very permissive license</li>
+      <li>
+        Japanese design aesthetics
+        <ul>
+          <li>Principle of least surprise</li>
+          <li>Principle of succinctness</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide" id="ruby-least-surprise">
+    <h2>Principle of least surprise</h2>
+
+    <p>
+      What class is an object?<br>
+      <code>object.class</code>
+    </p>
+
+    <p>
+      Length of an array?<br>
+      <code>arr.length</code>, <code>arr.size</code> or <code>arr.count</code>
+    </p>
+
+    <p>
+      Collection operations?<br>
+      <code>arr1 + arr2</code>, <code>arr1 - arr2</code>
+    </p>
+  </section>
+
+  <section class="slide" id="ruby-ducktyping">
+    <h2>Duck typing</h2>
+
+    <blockquote>
+      <strong>If it looks like a duck, swims like a duck, and quacks like a duck,<br>
+      then it is a duck.</strong>
+    </blockquote>
+
+    <p style="margin-top: 7.5rem;">
+      The type of an object is much less important than its capabilities
+    </p>
+  </section>
+
+  <section class="slide" id="ruby-java">
+    <h2>Hello, world in C#</h2>
+
+    <pre>
+using System;
+
+namespace ConsoleApplication1 {
+    class Program {
+        static void Main(string[] args) {
+            Console.WriteLine("Hello, world!");
+        }
+    }
+}
+    </pre>
+  </section>
+
+  <section class="slide" id="ruby-ruby">
+    <h2>Hello, world in Ruby</h2>
+
+    <pre>
+puts "Hello, world!"
+    </pre>
+  </section>
+
+  <section class="slide" id="ruby-simple">
+    <h2>Ruby is simple</h2>
+
+    <pre>
+3.times do
+  puts "ha"
+end
+
+=> "hahaha"
+    </pre>
+  </section>
+
+  <section class="slide" id="ruby-simple-2">
+    <h2>Ruby is simple</h2>
+
+    <ul>
+      <li>No semicolon after every line</li>
+      <li>Parentheses are optional</li>
+    </ul>
+
+    <pre>
+2.odd?()
+=> false
+
+3.odd?
+=> true
+    </pre>
+  </section>
+
+  <section class="slide" id="ruby-gems">
+    <h2>RubyGems</h2>
+
+    <ul>
+      <li>Package manager like NPM or Pip</li>
+      <li>Allows modular applications</li>
+      <li>~130,000 gems</li>
+    </ul>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shower-core/2.1.0/shower.min.js"></script>
 </body>
 </html>

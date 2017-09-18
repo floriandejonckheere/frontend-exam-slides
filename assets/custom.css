@@ -1,0 +1,13 @@
+/**
+ * custom.css - Custom styles
+ *
+ */
+
+.slide pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+
+    font-size: .8em;
+    line-height: 1.6em;
+}
