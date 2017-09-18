@@ -48,21 +48,9 @@
     <ul>
       <li>Truly object oriented</li>
       <li>No primitives</li>
-      <li>Reflection is builtin</li>
-      <li>Operators are methods</li>
-      <li>Dynamic dispatch</li>
+      <li>Operators are methods: <code>[], +, -, <<</code></li>
+      <li>Double dispatch</li>
       <li>Metaprogramming</li>
-    </ul>
-  </section>
-
-  <section class="slide" id="ruby-differences">
-    <h2>Ruby</h2>
-
-    <ul>
-      <li>JavaScript: competition between two companies</li>
-      <li>PHP: community effort</li>
-      <li>Ruby: vision of a single person</li>
-      <li>Rails: vision of another single person</li>
     </ul>
   </section>
 
@@ -174,12 +162,34 @@ end
     </pre>
   </section>
 
+  <section class="slide" id="ruby-simple-3">
+    <h2>Ruby is simple</h2>
+
+    <ul>
+      <li>Question marks usually indicate boolean return value</li>
+      <li>Bangs usually indicate "dangerous" methods</li>
+    </ul>
+
+    <pre>
+      <code class="ruby">
+array.empty?
+=> false
+
+['a', nil, 'b', nil].compact   # Returns a new object
+=> ['a', 'b']
+
+['a', nil, 'b', nil].compact!  # Mutates the array
+=> ['a', 'b']
+      </code>
+    </pre>
+  </section>
+
   <section class="slide" id="ruby-gems">
     <h2>RubyGems</h2>
 
     <ul>
-      <li>Package manager like NPM or Pip</li>
-      <li>Allows modular applications</li>
+      <li>Package manager like NPM or pip</li>
+      <li>Enable modular applications</li>
       <li>~130,000 gems</li>
     </ul>
   </section>
@@ -221,13 +231,14 @@ end
       <li>Scaffolding/boilerplate code
         <ul>
           <li>Make it work first, then expand it</li>
+          <li>Prototyping</li>
         </ul>
       </li>
     </ul>
   </section>
 
   <section class="slide" id="rails-who">
-    <h2>Who</h2>
+    <h2>Who is using RoR?</h2>
 
     <ul>
       <li>Basecamp</li>
@@ -357,6 +368,12 @@ end
       <li>Rails is stable and mature</li>
       <li>Essential tool for a polygot programmer</li>
     </ul>
+  </section>
+
+  <section class="slide video" id="wat">
+    <video poster="https://www.destroyallsoftware.com/assets/posters/talks/wat.poster-55045227db7a92a57047fa35040d2a929c5ff434a0270bdba653eec5d70fbf97.png" preload="auto" controls>
+      <source src="https://destroyallsoftware-talks.s3.amazonaws.com/wat.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKRVCECXBC4ZGHIQ%2F20170918%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20170918T194859Z&amp;X-Amz-Expires=14400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=87d7d9df067d95d3bfdc03720a00539b6f59937ec807eda3af66f27ccca773eb" />
+    </video>
   </section>
 
   <section class="slide black" id="qa">

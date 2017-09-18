@@ -40,6 +40,7 @@
 .rainbow {
     animation: 1s linear infinite rainbow_effect;
 }
+
 @keyframes rainbow_effect {
     /*0%   { visibility: hidden; }*/
     /*50%  { visibility: hidden; }*/
@@ -50,4 +51,22 @@
     60%   { color: yellow; }
     80%   { color: green; }
     100%  { color: violet; }
+}
+
+
+.slide.video {
+    padding-bottom: 1rem;
+}
+
+.slide.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+
+    height: 100%;
+    width: 100%;
+
+    background: black;
 }
