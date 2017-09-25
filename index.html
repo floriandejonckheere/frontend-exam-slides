@@ -151,6 +151,7 @@ end
       <li>Parentheses are optional</li>
     </ul>
 
+    <div class="flex flex-row">
     <pre>
       <code class="ruby">
 2.odd?()
@@ -160,6 +161,17 @@ end
 => true
       </code>
     </pre>
+      <pre>
+      <code class="ruby">
+if can_call
+  call('my', 'arguments')
+end
+
+call 'my', 'arguments' if can_call
+      </code>
+    </pre>
+
+    </div>
   </section>
 
   <section class="slide" id="ruby-simple-3">
@@ -342,7 +354,7 @@ end
 
     <ul>
       <li>Way slower than Java</li>
-      <li>No real concurrency due to Global Interpreter Lock (except JRuby)</li>
+      <li>No real concurrency due to Global Interpreter Lock (MRI)</li>
       <li>Small-ish market share</li>
       <li>Easy to program != good programming (see PHP)</li>
     </ul>
@@ -364,7 +376,7 @@ end
 
     <ul>
       <li>Ruby is <span class="rainbow">awesome</span></li>
-      <li>Used more and more to teach OOP</li>
+      <li>Used more and more to teach OOP and MVC</li>
       <li>Rails is stable and mature</li>
       <li>Essential tool for a polygot programmer</li>
     </ul>
@@ -374,10 +386,6 @@ end
     <video poster="https://www.destroyallsoftware.com/assets/posters/talks/wat.poster-55045227db7a92a57047fa35040d2a929c5ff434a0270bdba653eec5d70fbf97.png" preload="auto" controls>
       <source src="https://destroyallsoftware-talks.s3.amazonaws.com/wat.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKRVCECXBC4ZGHIQ%2F20170918%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20170918T194859Z&amp;X-Amz-Expires=14400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=87d7d9df067d95d3bfdc03720a00539b6f59937ec807eda3af66f27ccca773eb" />
     </video>
-  </section>
-
-  <section class="slide black" id="qa">
-    <h2>Questions</h2>
   </section>
 
   <div class="progress"></div>

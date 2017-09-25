@@ -70,3 +70,12 @@
 
     background: black;
 }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+    &.flex-row {
+         flex-direction: row;
+    }
+}
