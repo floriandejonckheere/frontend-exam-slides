@@ -15,7 +15,6 @@
     opacity: .4;
 }
 
-
 .slide ul,
 .slide ul > li {
     margin: 0;
@@ -28,54 +27,4 @@
 
 .slide ul > li > ul {
     padding-left: 2em;
-}
-
-.slide ul > li > ul > li::before {
-     content: '‣';
-    content:url('ruby.png');
-    width: 16px;
-    height: 16px;
- }
-
-.rainbow {
-    animation: 1s linear infinite rainbow_effect;
-}
-
-@keyframes rainbow_effect {
-    /*0%   { visibility: hidden; }*/
-    /*50%  { visibility: hidden; }*/
-    /*100% { visibility: visible; }*/
-
-    20%   { color: red; }
-    40%   { color: orange; }
-    60%   { color: yellow; }
-    80%   { color: green; }
-    100%  { color: violet; }
-}
-
-
-.slide.video {
-    padding-bottom: 1rem;
-}
-
-.slide.video video {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    z-index: 999;
-
-    height: 100%;
-    width: 100%;
-
-    background: black;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-
-    &.flex-row {
-         flex-direction: row;
-    }
 }
